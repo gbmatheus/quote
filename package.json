@@ -4,7 +4,9 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "export AWS_PROFILE=staging && export AWS_REGION=us-east-2 && serverless offline start",
+    "deploy": " export AWS_PROFILE=staging && export AWS_REGION=us-east-2 && serverless deploy"
   },
   "engines": {
     "node": ">=14.15.0"
